@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Ruth Chirwa" />
+  <meta name="description" content="Creative & stylish developer portfolio using Bootstrap 5" />
+  <title>Ruth Chirwa | Software Engineer</title>
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Animate.css -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+   
+  </style>
+</head>
+<body>
+ 
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">Ruth.dev</a>
+       
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<header class="hero">
+  <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.6);"></div>
+  <div class="container content position-relative">
+    <h1 class="animate__animated animate__fadeInDown display-4 fw-bold">Hi, I'm Ruth 👩🏽‍💻</h1>
+    <p class="lead animate__animated animate__fadeInUp animate__delay-1s">Turning tech ideas into reality with code</p>
+    <a href="#projects" class="btn btn-glow mt-4 animate__animated animate__fadeInUp animate__delay-2s">View My Work</a>
+  </div>
+  <canvas id="hero-canvas" class="position-absolute top-0 start-0 w-100 h-100" style="z-index: 0;"></canvas>
+</header>
+
+  <!-- About Me -->
+ <section id="about" class="py-5 bg-dark text-white">
+  <div class="container">
+    <h2 class="text-center text-info mb-4">About Me</h2>
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center">
+        <img src="img/Profile.jpeg" class="img-fluid shadow-lg border border-info rounded-3" alt="Ruth Avatar">
+      </div>
+       <br>
+      <div class="col-md-8">
+        <p class="fs-5">I’m a <strong>Software Engineer</strong> specializing in building robust backend services and sleek frontend interfaces. I thrive on problem-solving and enjoy turning complex ideas into scalable tech solutions.</p>
+        <div class="row mt-4">
+          <div class="col-sm-6">
+            <ul class="list-unstyled">
+              <li><i class="fas fa-code text-info me-2"></i> Python, JavaScript, SQL</li>
+              <li><i class="fas fa-server text-info me-2"></i> Django, FastAPI, PostgreSQL</li>
+              <li><i class="fas fa-laptop-code text-info me-2"></i> Responsive Web Design</li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <ul class="list-unstyled">
+              <li><i class="fas fa-terminal text-info me-2"></i> Git, CI/CD, Docker</li>
+              <li><i class="fas fa-robot text-info me-2"></i> Automation & APIs</li>
+              <li><i class="fas fa-user-astronaut text-info me-2"></i> Curious, Fast Learner</li>
+            </ul>
+          </div>
+        </div>
+        <p class="mt-3">Currently exploring <span class="text-info">AI tools</span>, <span class="text-info">DevOps workflows</span>, and building <strong>clean, scalable code</strong> for the real world.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-5 bg-black text-white">
+  <div class="container">
+    <h2 class="text-center text-info">Featured Projects</h2>
+    <div class="row g-4 mt-4">
+      <div class="col-md-4">
+        <div class="card bg-dark border-info shadow-lg">
+          <img src="img/pexels-luis-gomes-166706-546819.jpg" class="card-img-top" alt="Project">
+          <div class="card-body">
+            <h5 class="card-title text-info">API Platform</h5>
+            <p class="card-text">Built a RESTful API with FastAPI, JWT Auth, and PostgreSQL. Deployed with Docker & GitHub Actions.</p>
+            <a href="#" class="btn btn-outline-info btn-sm">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-dark border-info shadow-lg">
+          <img src="img/pexels-luis-gomes-166706-546819.jpg" class="card-img-top" alt="Project">
+          <div class="card-body">
+            <h5 class="card-title text-info">Portfolio v2</h5>
+            <p class="card-text">This very cyber-inspired portfolio built with Bootstrap 5 and custom canvas effects.</p>
+            <a href="#" class="btn btn-outline-info btn-sm">Live Demo</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-dark border-info shadow-lg">
+          <img src="img/pexels-rsantos1232-3888151.jpg" class="card-img-top" alt="Project">
+          <div class="card-body">
+            <h5 class="card-title text-info">Analytics Dashboard</h5>
+            <p class="card-text">Custom analytics dashboard using Chart.js, Flask, and real-time data stream simulation.</p>
+            <a href="#" class="btn btn-outline-info btn-sm">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Tech Stack -->
+  <section class="py-5 bg-dark text-white text-center">
+    <div class="container">
+      <h2>My Tech Stack</h2>
+      <div class="d-flex justify-content-center flex-wrap">
+        <i class="fab fa-python tech-icon"></i>
+        <i class="fab fa-js tech-icon"></i>
+        <i class="fab fa-html5 tech-icon"></i>
+        <i class="fab fa-css3-alt tech-icon"></i>
+        <i class="fab fa-react tech-icon"></i>
+        <i class="fab fa-git-alt tech-icon"></i>
+        <i class="fab fa-docker tech-icon"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- Journey Timeline -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center">My Dev Journey</h2>
+      <div class="timeline">
+        <div class="entry">
+          <h5>2022 — Started Coding</h5>
+          <p>Learned Python, JavaScript and basic web development</p>
+        </div>
+        <div class="entry">
+          <h5>2023 — Projects & APIs</h5>
+          <p>Built Django and FastAPI projects, learned Git & deployment</p>
+        </div>
+        <div class="entry">
+          <h5>2024 — Full-Stack & Hackathons</h5>
+          <p>Contributed to open source and participated in Code Blossom Hackathon</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-5 bg-dark text-white text-center">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <blockquote class="blockquote">
+        <p>"Ruth is a brilliant engineer. She brings creative ideas and great attention to detail to every project."</p>
+        <footer class="blockquote-footer text-white">Hackathon Teammate</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Resume -->
+ <section id="resume" class="py-5 bg-dark text-white text-center">
+  <div class="container">
+    <h2 class="text-info">Resume</h2>
+    <p class="mb-3">Download my latest resume or connect with me directly.</p>
+    <a href="/files/Ruth_Chirwa_Resume.pdf" download class="btn btn-outline-info"><i class="fas fa-download me-2"></i>Download PDF</a>
+  </div>
+</section>
+
+  <!-- Contact -->
+ <section id="contact" class="py-5 bg-black text-white text-center">
+  <div class="container">
+    <h2 class="text-info">Let's Connect</h2>
+    <p class="mb-3">I'm always open to opportunities, collabs, and tech convos. Reach out!</p>
+    <p>Email: <a href="mailto:ruth@example.com" class="text-decoration-none text-info">ruth@example.com</a></p>
+    <div class="d-flex justify-content-center gap-4 fs-3">
+      <a href="#" class="text-info"><i class="fab fa-github"></i></a>
+      <a href="#" class="text-info"><i class="fab fa-linkedin"></i></a>
+      <a href="#" class="text-info"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <small>&copy; 2025 Ruth Chirwa. Designed with Bootstrap5.</small>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+
+     // Create a digital matrix background effect
+  const canvas = document.getElementById('hero-canvas');
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const letters = Array(256).join("1").split("");
+  const fontSize = 14;
+  const columns = canvas.width / fontSize;
+  const drops = Array(Math.floor(columns)).fill(1);
+
+  function draw() {
+    ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "#58a6ff";
+    ctx.font = fontSize + "px monospace";
+
+    for (let i = 0; i < drops.length; i++) {
+      const text = String.fromCharCode(0x30A0 + Math.random() * 96);
+      ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+      if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+        drops[i] = 0;
+      }
+      drops[i]++;
+    }
+  }
+
+  setInterval(draw, 33);
+  window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  });
+  </script>
+</body>
+</html>

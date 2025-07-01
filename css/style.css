@@ -1,0 +1,111 @@
+ :root {
+      --bg-color: #0f0f0f;
+      --text-color: #e0e0e0;
+      --card-bg: #151515;
+      --primary-color: #58a6ff;
+    }
+    body.light-mode {
+      --bg-color: #f5f5f5;
+      --text-color: #111;
+      --card-bg: #fff;
+      --primary-color: #007bff;
+    }
+    /* body.dark-mode {
+      --bg-color: #0f0f0f;
+      --text-color: #e0e0e0;
+      --card-bg: #151515;
+      --primary-color: #58a6ff;
+    }*/
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      scroll-behavior: smooth;
+    }
+    .navbar {
+      backdrop-filter: blur(10px);
+      background-color: rgba(0,0,0,0.8);
+    }
+    .hero {
+      height: 100vh;
+      background: radial-gradient(circle at top right, #010130, #000);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero .content {
+      z-index: 1;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-family: 'Orbitron', sans-serif;
+    }
+    .btn-glow {
+      background: transparent;
+      border: 2px solid var(--primary-color);
+      color: var(--primary-color);
+      transition: all 0.3s;
+    }
+    .btn-glow:hover {
+      background: var(--primary-color);
+      color: #000;
+      box-shadow: 0 0 10px var(--primary-color);
+    }
+    .card {
+      background-color: var(--card-bg);
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 0 20px rgba(88, 166, 255, 0.3);
+    }
+    section h2 {
+      font-family: 'Orbitron', sans-serif;
+      color: var(--primary-color);
+      margin-bottom: 2rem;
+    }
+    .skills .progress {
+      height: 1.5rem;
+      background-color: #2c2f33;
+    }
+    .skills .progress-bar {
+      background: linear-gradient(90deg, #00c9ff, #92fe9d);
+      font-weight: bold;
+    }
+    footer {
+      background: #0d1117;
+      padding: 1rem 0;
+      text-align: center;
+      color: #999;
+    }
+    .mode-toggle {
+      position: fixed;
+      top: 8px;
+      right: 60px;
+      background: var(--card-bg);
+      border: 1px solid var(--primary-color);
+      color: var(--primary-color);
+      border-radius: 50px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      z-index: 1000;
+    }
+    .tech-icon {
+      font-size: 2rem;
+      margin: 0.5rem;
+      color: var(--primary-color);
+    }
+    .timeline {
+      position: relative;
+      padding-left: 30px;
+      border-left: 2px solid var(--primary-color);
+    }
+    .timeline .entry {
+      margin-bottom: 2rem;
+    }
